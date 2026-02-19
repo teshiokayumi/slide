@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exhibition - sugerpowderflower</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&family=Zen+Kaku+Gothic+New:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="exhibition.css">
+</head>
+<body>
+    <div class="background-layer" id="bg-layer"></div>
+    <div class="overlay"></div>
+
+    <main class="gallery-container">
+        <button class="nav-btn prev" id="prev-btn" aria-label="Previous image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+        </button>
+
+        <div class="slide-content">
+            <div class="image-wrapper">
+                <img id="current-image" src="" alt="Exhibition Image">
+            </div>
+            <div class="info-card glass-panel">
+                <h2 id="image-title" class="fade-in-up"></h2>
+                <p id="image-detail" class="fade-in-up delay-1"></p>
+            </div>
+        </div>
+
+        <button class="nav-btn next" id="next-btn" aria-label="Next image">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+        </button>
+    </main>
+
+    <div class="indicators" id="indicators"></div>
+
+    <script src="exhibition.js"></script>
+</body>
+</html>
